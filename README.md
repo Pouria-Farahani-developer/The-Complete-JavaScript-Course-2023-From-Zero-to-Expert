@@ -60,14 +60,14 @@
     </pre>
 
     
-    <pre dir="ltr">
+    <pre dir='ltr'>
       const Values = object.values(openingHours);
       console.log(Values)
     </pre>
 
     
 
-    <pre dir="ltr">
+    <pre dir='ltr'>
       for(const [key,{open,close}] of entries){
         console.log(`on ${key} we open at ${open} and close at ${close}`);
       }
