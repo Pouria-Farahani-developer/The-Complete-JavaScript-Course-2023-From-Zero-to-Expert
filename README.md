@@ -12,12 +12,12 @@
   نکته : ما می توانیم بیاییم و multiple chain داشته باشیم .
 
   نحوه حلقه زدن روی  آرایه به وسیله  for :‌
-<code dir='ltr'>
+<pre dir='ltr'>
 const days = ['sat','sun','mon','tue','wed','thu'];
     for(const day of  days){
       consol.log(day) //output 'sat','sun',...
     }
-</code>
+</pre>
 
  یادآوری : یک نحوه صداکردن عضوهای آرایه بدین شکل می باشد.  
  <pre dir='ltr'>
