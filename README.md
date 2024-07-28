@@ -5,7 +5,7 @@
   console.log(name?.family.city)
   //output undefined?.family.city
 </pre>
-    console.log)_
+`console.log()`
   نکته : در واقع در مثال بالا برای ما همان undefined را بر میگرداند . نمی گذارد که ادامه زنجیره هم برای ما اجرا شود .
   
   اما اگر در مثال بالا از همان chainاستفاده نکنیم ، باعث می شود که به ما خطا برگرداند .
