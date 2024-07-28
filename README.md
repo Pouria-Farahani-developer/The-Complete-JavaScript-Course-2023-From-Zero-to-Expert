@@ -63,6 +63,10 @@
       const Values = object.values(openingHours);
       console.log(Values)
     </pre>
+
+    مبحث مجموعه ها : 
+    
+
     
 
   
