@@ -45,11 +45,7 @@
   نتیجه گیری : پس می توانیم نتیجه گیری کنیم که مورد اول بسیار خلاصه تر و منطقی تر است . 
   نکته : حلقه زدن روی آبجکت ها =>
   
-    <pre dir='ltr'>
-      for(const day of object.key(openingHours)){
-        console.log(day)
-      }
-    </pre>
+
     نکته : در واقع بایستی به این نکته اشاره کنیم که کد object.key می آید و برای ما خروجی یک آرایه را میدهد .
     <pre dir='ltr'>
       const properties = Object.keys(openingHours);
