@@ -12,7 +12,7 @@
   نکته : ما می توانیم بیاییم و multiple chain داشته باشیم .
 
   نحوه حلقه زدن روی  آرایه به وسیله  for :‌
-``
+```
 const days = ['sat','sun','mon','tue','wed','thu'];
     for(const day of  days){
       consol.log(day) //output 'sat','sun',...
