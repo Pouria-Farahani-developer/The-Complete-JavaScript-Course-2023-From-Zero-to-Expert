@@ -55,6 +55,7 @@
   
   نکته : در واقع بایستی به این نکته اشاره کنیم که کد object.key می آید و برای ما خروجی یک آرایه را میدهد .
     <pre dir='ltr'>
+    
       const properties = Object.keys(openingHours);
       console.log(properties);
     </pre>
