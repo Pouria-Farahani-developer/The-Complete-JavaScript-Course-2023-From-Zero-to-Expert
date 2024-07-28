@@ -6,4 +6,45 @@
     //output undefined?.family.city
   </pre>
   در واقع در مثال بالا برای ما همان undefined را بر میگرداند . نمی گذارد که ادامه زنجیره هم برای ما اجرا شود .
+  اما اگر در مثال بالا از همان chainاستفاده نکنیم ، باعث می شود که به ما خطا برگرداند .
+  نکته : ما می توانیم بیاییم و multiple chain داشته باشیم .
+
+  نحوه حلقه زدن روی  آرایه به وسیله  for :‌
+  <pre dir='ltr'>
+    const days = ['sat','sun','mon','tue','wed','thu'];
+    for(const day of  days){
+      consol.log(day) //output 'sat','sun',...
+    }
+  </pre>
+ یادآوری : یک نحوه صداکردن عضوهای آرایه بدین شکل می باشد.  
+ <pre dir='ltr'>
+    const storage = restaurant.openingHours[day];
+ </pre>
+
+ <pre dir='ltr'>
+    const storage = restaurant.openingHours[day]?.open ?? 'closed';
+ </pre>
+روشی برای چک کردن اینکه متدی که میخواهیم در داخل آبجکت وجود دارد و اگر وجود داشت برای ما اجرا شود :
+<pre dir='ltr'>
+    conso.log(restaurant.order?.(0,1) ?? 'Method does not exit');
+ </pre>
+
+  مقایسه دو روش برای اینکه ببینیم که کدام روش بهینه تر است . 
+  <pre dir='ltr'>
+    const user = ['array'];
+    console.log(users[0]?.name ?? 'Users array empty');
+  </pre>
+
+  OR
+
+  <pre dir='ltr'>
+    const user = ['array'];
+    if(user.length > 0) console.log(users[0].name);
+    else console.log('user array empty');
+  </pre>
+  نتیجه گیری : پس می توانیم نتیجه گیری کنیم که مورد اول بسیار خلاصه تر و منطقی تر است . 
+  
+
+
+  
 </div>
