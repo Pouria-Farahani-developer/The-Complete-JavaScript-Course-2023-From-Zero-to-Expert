@@ -59,7 +59,7 @@
       console.log(properties);
     </pre>
 
-    <hr/>
+    ~~
         
     <pre dir='ltr'>
       const Values = object.values(openingHours);
