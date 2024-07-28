@@ -64,7 +64,7 @@
     مبحث مجموعه ها : 
     <pre dir='ltr'>
       const orderSet = new Set(['ali','pouria','arman','pouria','arman']);
-      console.log(orderSet) //output ['ali','pouria','arman']
+      console.log(orderSet) output ['ali','pouria','arman']
     </pre>
     در واقع مجموعه ها عضو های تکراری یک آرایه را به شمار نمی آورد .
     
