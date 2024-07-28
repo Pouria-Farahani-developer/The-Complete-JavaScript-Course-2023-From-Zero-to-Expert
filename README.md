@@ -4,7 +4,7 @@
 <pre dir='ltr'>
   console.log(name?.family.city)
   //output undefined?.family.city
-```
+</pre>
 
   نکته : در واقع در مثال بالا برای ما همان undefined را بر میگرداند . نمی گذارد که ادامه زنجیره هم برای ما اجرا شود .
   
