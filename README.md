@@ -12,12 +12,13 @@
   نکته : ما می توانیم بیاییم و multiple chain داشته باشیم .
 
   نحوه حلقه زدن روی  آرایه به وسیله  for :‌
-  <pre dir='ltr'>
-    const days = ['sat','sun','mon','tue','wed','thu'];
+``
+const days = ['sat','sun','mon','tue','wed','thu'];
     for(const day of  days){
       consol.log(day) //output 'sat','sun',...
     }
-  </pre>
+```
+
  یادآوری : یک نحوه صداکردن عضوهای آرایه بدین شکل می باشد.  
  <pre dir='ltr'>
     const storage = restaurant.openingHours[day];
