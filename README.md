@@ -1,5 +1,5 @@
 # javascript-jonas
-<div dir="rtl">
+<div dir="rtl" style={code:dir:ltr}>
   نکته : در واقع دستور chain یا همان ؟ می آید مثل and برای  ما عمل میکند و هر جایی که مقدار undefined باشد همان مقدار را برای  ما برمیگرداند و در واقع نمی گذارد  چنین دستوری اجرا شود .
 ```
   console.log(name?.family.city)
