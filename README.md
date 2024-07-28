@@ -22,7 +22,6 @@
  <pre dir='ltr'>
     const storage = restaurant.openingHours[day];
  </pre>
-***<br/>
  <pre dir='ltr'>
     const storage = restaurant.openingHours[day]?.open ?? 'closed';
  </pre>
@@ -55,16 +54,12 @@
   
   نکته : در واقع بایستی به این نکته اشاره کنیم که کد object.key می آید و برای ما خروجی یک آرایه را میدهد .
     <pre dir='ltr'>
-    
       const properties = Object.keys(openingHours);
       console.log(properties);
-      
     </pre>
     <pre dir='ltr'>
-    
       const Values = object.values(openingHours);
       console.log(Values)
-      
     </pre>
     مبحث مجموعه ها : 
     
