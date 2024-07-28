@@ -64,7 +64,7 @@
     مبحث مجموعه ها : 
     <pre dir='ltr'>
       const orderSet = new Set(['ali','pouria','arman','pouria','arman']);
-      console.log(orderSet) //output ['ali','pouria','arman']
+      console.log(orderSet) //output {'ali','pouria','arman'}
     </pre>
     در واقع مجموعه ها عضو های تکراری یک آرایه را به شمار نمی آورد .\
     از آنجایی که آرایه ها قابل  تکرار هستند ، پس در نتیجه میتوانیم برای آن  ها هم set را در نظر بگیریم .\
@@ -80,6 +80,50 @@
     <pre dir='ltr'>
       orderset.add('hamidreza')
     </pre>
+    نحوه حذف کردن یک عنصر از داخل set :\
+    <pre dir='ltr'>
+      orderSet.delete('ali)
+    </pre>
+    نکته:از set بیشتر به حالتی استفاده میشود که چک بکنند آیا مقداری داخل sets وجود دارد یا خیر ، در واقع نمی آیند مقداری از داخل مجموعه ها به صورت آرایه ای بیرون بکشند.برای این حالتی      که مد نظر ما هست باید از آرایه ها استفاده کنید.\
+    ما میتوانیم بیاییم با استفاده از دستور clear تمامی مقادیر که داخل sets وجود دارد را پاک کنیم .\
+    <pre dir='ltr'>
+      orderSet.clear() //output:{}
+    </pre>
+    همچنین ما میتوانیم بیاییم و روی sets حلقه بزنیم . مثال :
+    <pre dir='ltr'>
+      for(const order of orderSet) console.log(order)
+    </pre>
+    نکته: در واقع استفاده اصلی از مجموعه ها برای این است که مقادیر یونیک داشته باشیم .\
+    مثال:\
+    <pre dir='ltr'>
+      const staff = ['waiter','chef','waiter',manager',Chef','Waiter'];
+      const staffUnique = new set(staff);
+      console.log(staffUnique);
+    </pre>
+    روش تبدیل یک set به یک آرایه :\
+    <pre dir='ltr'>
+      const staff = ['waiter','chef','waiter',manager',Chef','Waiter'];
+      const staffUnique = [...new set(staff)];
+      console.log(staffUnique);
+    </pre>
+    نکته:اگر بخواهیم بدونیم که در یک کلمه چند تا حرف مختلف وجود دارد میتوانیم از set استفاده کنیم .\
+    <pre dir='ltr'>
+      console.log(new set('jonasschmedtmann').size);
+    </pre>
+    نکته: اگر ترتیب آرایه ها برای ما اهمیت بیشتری نسبت به unique بودن مقادیر برامون داره میتوانیم از آرایه ها استفاده کنیم . ولی اگر unique بودن مقادیر اهمیت بیشتری نسبت به ترتیب     
+     مقادیر برامون داره بایستی از set استفاده کنیم .\
+    مبحث نقشه ها:\
+    
+     
+     
+    
+    
+    
+    
+    
+  
+    
+    
     
     
 
