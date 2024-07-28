@@ -64,11 +64,11 @@
     مبحث مجموعه ها : 
     <pre dir='ltr'>
       const orderSet = new Set(['ali','pouria','arman','pouria','arman']);
-      console.log(orderSet) output ['ali','pouria','arman']
+      console.log(orderSet) //output ['ali','pouria','arman']
     </pre>
     در واقع مجموعه ها عضو های تکراری یک آرایه را به شمار نمی آورد .
     
-    نکته: از آنجایی که آرایه ها قابل  تکرار هستند ، پس در نتیجه میتوانیم برای آن  ها همset را در نظر بگیریم . 
+    از آنجایی که آرایه ها قابل  تکرار هستند ، پس در نتیجه میتوانیم برای آن  ها هم set را در نظر بگیریم . 
 
     
     
