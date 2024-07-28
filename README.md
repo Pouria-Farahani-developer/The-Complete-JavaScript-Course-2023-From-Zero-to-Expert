@@ -58,10 +58,13 @@
     
       const properties = Object.keys(openingHours);
       console.log(properties);
+      
     </pre>
     <pre dir='ltr'>
+    
       const Values = object.values(openingHours);
       console.log(Values)
+      
     </pre>
     مبحث مجموعه ها : 
     
