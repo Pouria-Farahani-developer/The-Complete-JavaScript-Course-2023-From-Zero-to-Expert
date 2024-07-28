@@ -22,7 +22,7 @@
  <pre dir='ltr'>
     const storage = restaurant.openingHours[day];
  </pre>
-
+***<br/>
  <pre dir='ltr'>
     const storage = restaurant.openingHours[day]?.open ?? 'closed';
  </pre>
