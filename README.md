@@ -59,10 +59,14 @@
       console.log(properties);
     </pre>
 
+    ---
+    
     <pre dir="ltr">
       const Values = object.values(openingHours);
       console.log(Values)
     </pre>
+
+    
 
     <pre dir="ltr">
       for(const [key,{open,close}] of entries){
