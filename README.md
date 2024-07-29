@@ -131,6 +131,14 @@ const days = ['sat','sun','mon','tue','wed','thu'];
     rest.set('catgories',['italian','pizzeria']).set('open',11).set('close',13)
   </pre>
  در واقع ساز و کار مثال بالا ، به چه شکل است ، بدین شکل می شود که چون با هر بار set کردن map ما بروز می شود و به ما برگردانده میشود پس در نتیجه ما تمامی این مراحل انگار داریم به صورت تک به تک انجام میدهیم .
+ همچنین ما در map ، می توانیم به وسیله استفاده از متد get به مقادیر داخل map دسترسی داشته باشیم .
+
+<pre dir='ltr'>
+  console.log(rest.get('name));
+  console.log(rest.get(2));
+</pre>
+
+ 
     
     
     
