@@ -204,24 +204,43 @@ weakSet
 Non-Built in :ساختار داده هایی که در جاوا اسکریپ موجود نمی باشد 
 stacks - queues - linked lists - trees - hash tables
 چه زمانهایی از هر یک از ساختار داده ها استفاده کنیم :
+
 Arrays :
+
 use when you need ordered list of values (might contain duplicate)
+
 use when you need to manipulate data
+
 sets :
+
 use when you need to work with unique values
+
 use when high-performance is really important
+
 use to remove duplicates from arrays
+
 Objects:
+
 More Traditional key/value store ("abused" objects)
+
 easier to write and access values with . and []
+
 use when need to include functions (methods)
+
 use when working with json (can convert to map)
+
 maps :
+
 better performance
+
 keys can have any data type
+
 easy to iterate
+
 easy to compute size
+
 use when you simply need to map key to values
+
 use when you need keys that are not strings
 
 
