@@ -272,7 +272,56 @@ use when you need keys that are not strings
 </pre>
 <pre dir='ltr'>
  console.log(airline.slice(-2)) // در این روش رشته را از آخر شروع به شمارش می کند
+ console.log(airline.slice(1,-1)) // این دوتا عدد باعث می شود که یک کلمه از ابتدا و یک کلمه از انتها برداشته شود و در نهایت باقی کلمات نمایش داده شود 
 </pre>
+قسمت کار با رشته ها - بخش 2 :
+<pre dir='ltr'>
+ const airline = 'TAP AIR Portugal';
+ console.log(airline.toLowerCase());
+ console.log(airline.toUpperCase());
+ console.log('Jonas'.toLowerCase());
+</pre>
+<pre dir='ltr'>
+ //Fix Capitalization in name
+ const passenger = 'jOnAs';
+ const passengerLower = passenger.toLowerCase();
+ const passengerCorrect = passengerLower[0].toUpperCase() + passengerLower.slice(1);
+ console.log(passengerCorrect);
+</pre>
+<pre dir='ltr'>
+ const email = 'hello@jonas.io';
+ const loginEmail=' Hello@Jonas.Io \n';
+ const normalizedEmail=loginEmail.toLowerCase().trim();
+ console.log(email === normalizedEmail);
+</pre>
+توضیحاتی در مورد replacing : 
+<pre dir='ltr'>
+ const priceGB = '288,971';
+ const priceUS = priceGB.replace('1','8').replace(',','.');
+ console.log(priceUS);
+</pre>
+<pre dir='ltr'>
+ const announcement = 'All passengers come to boarding door 23. Boarding door 23!';
+ console.log(announcement.replace('door','gate')); // در این مثال فقط کلمه اول که پیدا شود جایگزین می شود و سایر کلمات جایگزین نمی شود 
+ console.log(announcement.replace(/door/g,'gate')); // اما در این مثال تمام کلماتی که مد نظر ما در جمله هست جایگزین می شود
+</pre>
+نکته : در مثال فوق ، دومین مثال حکم regular expression پیدا کرد و با استفاده از کلمه g چون به معنی global می شود ، در نتیجه تمامی کلمات جایگزین می شوند . در این روش کوچک و یا بزرگ بودن کلمات هم دارای اهمیت می باشند .
+
+توضیح دادن متد هایی که برای ما حالت Boolean دارند :
+<pre dir='ltr'>
+ const plane = 'A320neo';
+ console.log(plane.includes('A320'));
+ console.log(plane.startsWith('Air'));
+ console.log(plane.endsWith('neo'));
+</pre>
+برای مقایسه کردن string ها ، اولین و بهترین کار در این است که ابتدا ما بیاییم و رشته های خود را به lowercase تبدیل کنیم و سپس عملیات مقایسه را روی آن ها انجام بدهیم.
+
+
+
+
+
+
+
 
 
 
