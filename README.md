@@ -244,6 +244,40 @@ easy to compute size
 use when you simply need to map key to values
 
 use when you need keys that are not strings
+مبحث کار با رشته ها :
+
+ما میتوانیم همانند آرایه ها با رشته ها رفتار کنیم . به طور مثال : 
+<pre dir='ltr'>
+ const airline = 'TAP AIR Portugal';
+ const plane = 'A320';
+ console.log(plane[0]); //output : A
+ console.log('B737'[0]);
+ console.log(airline.length) ;
+ console.log('B737'.length);
+ console.log(airline.indexof('r')); //output : 6
+ console.log(airline.lastIndexOf('r')); //output : 10
+ console.log(airline.indexOf('Portugal')); //this method is case sensitive
+</pre>
+معرفی متد slice : 
+<pre dir='ltr'>
+ console.log(airline.slice(4)) //Air Portugal
+ console.log(airline.slice(4,7)) //Air
+</pre>
+نکته : بایستی این نکته را بدانیم که اگر خواستیم از رشته فوق استفاده کنیم ابتدا بایستی آن را در یک متغیر ذخیره کنیم و متد slice رشته اصلی ما را تغییر نمیدهد. 
+
+مثال : در این مثال میخواهیم اولین کلمه و اخرین کلمه مقدار متغیر airline را جدا کنیم .
+<pre dir='ltr'>
+ console.log(airline.slice(0,airline.indexOf(' ')));
+ console.log(airline.lastIndexOf+1); // we plus with 1 because we have not extra space
+</pre>
+<pre dir='ltr'>
+ console.log(airline.slice(-2)) // در این روش رشته را از آخر شروع به شمارش می کند
+</pre>
+
+
+
+
+
 
 
 
