@@ -196,6 +196,7 @@ Source OF Data :
 1) From the program itself : Data written directly in source code.
 2) From the UI : Data input from the user or data written in Dom
 3) From external sources : Data Fetched for example from web Api(Application Programming Interface)
+   
 نکته : اگر احتیاج داشتیم که یک Simple list داشته باشیم بهترین انتخاب استفاده از Array or Sets ولی اگر احتیاج به Key/Value PAIRS داشتیم بهترین انتخاب استفاده از Object or Maps می باشد .  در واقع میتوان گفت : keys allow us to describe values .
 
 بقیه ساختار داده هایی که وجود دارند :
