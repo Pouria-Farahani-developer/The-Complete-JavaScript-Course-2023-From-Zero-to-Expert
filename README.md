@@ -192,10 +192,12 @@ const days = ['sat','sun','mon','tue','wed','thu'];
  console.log(question.values());
 </pre>
 سوال : از کدام ساختار داده استفاده کنیم ؟
+<pre dir='ltr'>
 Source OF Data : 
 1) From the program itself : Data written directly in source code.
 2) From the UI : Data input from the user or data written in Dom
 3) From external sources : Data Fetched for example from web Api(Application Programming Interface)
+</pre>
    
 نکته : اگر احتیاج داشتیم که یک Simple list داشته باشیم بهترین انتخاب استفاده از Array or Sets ولی اگر احتیاج به Key/Value PAIRS داشتیم بهترین انتخاب استفاده از Object or Maps می باشد .  در واقع میتوان گفت : keys allow us to describe values .
 
@@ -206,7 +208,7 @@ weakSet
 Non-Built in :ساختار داده هایی که در جاوا اسکریپ موجود نمی باشد 
 stacks - queues - linked lists - trees - hash tables
 چه زمانهایی از هر یک از ساختار داده ها استفاده کنیم :
-
+<pre dir='ltr'>
 Arrays :
 
 use when you need ordered list of values (might contain duplicate)
@@ -244,6 +246,7 @@ easy to compute size
 use when you simply need to map key to values
 
 use when you need keys that are not strings
+</pre>
 مبحث کار با رشته ها :
 
 ما میتوانیم همانند آرایه ها با رشته ها رفتار کنیم . به طور مثال : 
