@@ -315,6 +315,87 @@ use when you need keys that are not strings
  console.log(plane.endsWith('neo'));
 </pre>
 برای مقایسه کردن string ها ، اولین و بهترین کار در این است که ابتدا ما بیاییم و رشته های خود را به lowercase تبدیل کنیم و سپس عملیات مقایسه را روی آن ها انجام بدهیم.
+کار با رشته ها ( قسمت سوم ) : 
+کار با split ها : 
+<pre dir='ltr'>
+ console.log('a+Bery+nice+string'.split('+')); //output:['a','very','nice','string']);
+ console.log('Jonas Schmedtmann'.split(' '));
+ const [firstName,lastName]='Jonas Schmedtmann'.split(' ');
+</pre>
+مثالی برای استفاده از متد join : 
+<pre dir='ltr'>
+ const newName = ['Mr.',firstName,lastName.toUpperCase()].join(' ')
+ console.log(newName) //output Mr. Jonas schmedtmann
+</pre>
+مثال : 
+<pre dir='ltr'>
+ const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+
+  for(const n of names){
+   namesUpper.push(n[0].toUpperCase() + n.slice(1));
+  }
+
+  console.log(namesUpper.joini(' '));
+ }
+
+ capitalizeName('jessica ann smith davis');
+ capitalizeName('jonas schmedtmann');
+</pre>
+راه حل دوم :
+<pre dir='ltr'>
+ const capitalizeName = function (name) {
+  const names = name.split(' ');
+  const namesUpper = [];
+
+  for(const n of names){
+   namesUpper.push(n.replace(n[0],n[0].toUpperCase()));
+  }
+
+  console.log(namesUpper.joini(' '));
+ }
+
+ capitalizeName('jessica ann smith davis');
+ capitalizeName('jonas schmedtmann');
+</pre>
+توضیح در مورد padding ها : 
+<pre dir='ltr'>
+ const message = 'Go to gate 23!';
+ console.log(message.padStart(25,'+')); // در واقع متغیر اول مقداری هست که میخواهیم طول رشته به همان اندازه باشد و متغیر دوم المانی هست که میخواهیم باقی رشته با آن پر شود
+</pre>
+<pre dir='ltr'>
+ const message = 'Go to gate 25!';
+ console.log(message.padEnd(35,'-'));
+</pre>
+در واقع یک نمونه مثال برای استفاده از padding ها ، همان شماره کارت های اعتباری می باشد که با * نمایش می دهیم .
+
+نکته : ما بایستی به این نکته توجه داشته باشیم که pad برای رشته های str کاربرد دارد.
+
+یک مثال دیگر از استفاده padStart : 
+<pre dir='ltr'>
+ const maskCreditCard = function (number){
+  const str = number + '';
+  const last = str.slice(-4);
+  return last.padStart(str.length,'*');
+ }
+
+ console.log(maskCreditCard(64637836));
+ console.log(maskCreditCard(43378463864647384));
+</pre>
+همین روالی که توضیح داده شد را میتوانیم برای padEnd هم مورد استفاده قرار بدهیم .
+
+توضیح دادن متد Repeat : 
+<pre dir='ltr'>
+  const message2 = 'Bad waether... All Departues Delayed ...';
+  console.log(message2.repeat(5));
+</pre>
+
+
+
+
+
+
 
 
 
