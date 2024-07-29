@@ -154,10 +154,87 @@ const days = ['sat','sun','mon','tue','wed','thu'];
 </pre>
 نکته : Map و set همگی در es6 معرفی شده اند .
 نکته : از آنجایی که ما گفتیم در map میتوانیم از هر عنصری به عنوان کلید استفاده کنیم پس در اینجا میخواهیم مثالی بزنیم که در آن از آرایه به عنوان کلید استفاده شود . 
-
 <pre dir='ltr'>
   rest.set([1,2],'Test');
 </pre>
+همچنین ما میتوانیم از المان ها به عنوان کلید Map خود استفاده کنیم . 
+
+<pre dir='ltr'>
+  rest.set(document.querySelector('h1),'Heading');
+</pre>
+مثال:
+<pre dir='ltr'>
+ const question = new Map([
+  ['qustion','what is the best programming language in the world?'],
+  [1,'c'],
+  [2,'java'],
+  [3,'javascript']
+ ])
+ console.log(question);
+</pre>
+ساختاری که در داخل Map برای question وجود دارد دقیقا مانند ساختار مثال زیر می باشد . 
+<pre dir='ltr'>
+  console.log(Object.entries(openingHours));
+</pre>
+نکته: این متد فقط هنگامی جواب میدهد که ما یک نمونه سازی از Map کرده باشیم .
+نحوه حلقه زدن روی Map :
+<pre dir='ltr'>
+ for(const [key,value] of question){
+  if(typeof key === 'number') console.log(`Answer ${key}:${value}`)
+ }
+</pre>
+نکته: در حالت کلی باید توجه داشته باشیم که برای حلقه زدن بر روی object و یا Map ابتدا بایستی از متد entries استفاده کنیم ولی در مثال فوق چون ما خودمون از قبل entries کرده بودیم مقادیر خودمون را پس لازم به اینکار نبود.
+<pre dir='ltr'>
+ //convert Map to array
+ console.log([...question])
+ //other example
+ console.log(question.keys());
+ console.log(question.values());
+</pre>
+سوال : از کدام ساختار داده استفاده کنیم ؟
+Source OF Data : 
+1) From the program itself : Data written directly in source code.
+2) From the UI : Data input from the user or data written in Dom
+3) From external sources : Data Fetched for example from web Api(Application Programming Interface)
+نکته : اگر احتیاج داشتیم که یک Simple list داشته باشیم بهترین انتخاب استفاده از Array or Sets ولی اگر احتیاج به Key/Value PAIRS داشتیم بهترین انتخاب استفاده از Object or Maps می باشد .  در واقع میتوان گفت : keys allow us to describe values .
+بقیه ساختار داده هایی که وجود دارند :
+other built-in: ساختار داده هایی که در جاوا اسکریپ موجود است
+weakMap
+weakSet
+Non-Built in :ساختار داده هایی که در جاوا اسکریپ موجود نمی باشد 
+stacks - queues - linked lists - trees - hash tables
+چه زمانهایی از هر یک از ساختار داده ها استفاده کنیم :
+Arrays :
+use when you need ordered list of values (might contain duplicate)
+use when you need to manipulate data
+sets :
+use when you need to work with unique values
+use when high-performance is really important
+use to remove duplicates from arrays
+Objects:
+More Traditional key/value store ("abused" objects)
+easier to write and access values with . and []
+use when need to include functions (methods)
+use when working with json (can convert to map)
+maps :
+better performance
+keys can have any data type
+easy to iterate
+easy to compute size
+use when you simply need to map key to values
+use when you need keys that are not strings
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
